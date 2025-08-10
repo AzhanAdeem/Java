@@ -1,7 +1,9 @@
+
 //import java.util.Scanner;
 //import java.io.File;
 
 public class JavaSyntax {
+
 	public static void main(String[] args){
 
 		// //===========================================      Comment    ================================== 
@@ -99,14 +101,14 @@ public class JavaSyntax {
 		// 	}
 		// //}
 
-		// // =============================== = = = = = = =    Strings      =========================
+		// // ===================================    Strings           =========================
 
 		// System.out.println("\nAs Salamu alaykum, Fam");
         // System.out.println("App"+"le");
 		// System.out.println(num1 +" "+ num2);
 		// System.out.printf("%6d %3d", forFloat,num2);
 
-       	// // ====================================  Taking user input =================================
+       	// // ====================================  Taking user input  ==========================
 
 		// //The scanner obj is to be created once, for all user inputs;
         // Scanner scanObj = new Scanner(System.in);
@@ -117,7 +119,7 @@ public class JavaSyntax {
 		// int num3 = scanObj.nextInt();
 		// scanObj.close();
 
-		// // ======================================        Loops       =======================================
+		// // =====================================        Loops       =========================
 
         // int i2 = 1;
 		// while( i2 < 23){ // Runs on a condition no itterator needed.
@@ -183,6 +185,7 @@ public class JavaSyntax {
 		// }
 
 		// //==============================         How to take input in single line comments  =================
+
 		// Scanner scanObj2 = new Scanner(System.in);
 
 		// System.out.print("Enter a list of number's.");
@@ -239,23 +242,64 @@ public class JavaSyntax {
 		// 	System.out.println(x3);
 		// }
         
-		// //==========================================   OOP    ====================================================================
+		// // ===============================   Method Overloading (method signature)
 
-		my_class classObj = new my_class();
-        classObj.myFunc(7865, "Sami");
+   		// int a, b , c; 
+    	// a =  b = c = 23;
+    	// fun1(a,b);
+    	// fun1(a, b , c);
 
-	}
+		// // //=============================   OOP    
+
+		// my_class classObj = new my_class();
+        // classObj.myFunc(7865, "Sami");
+
+
+		// ===================================  Array of Obj
+
+		my_class[] my_classObj1 = {(new my_class("Asad", 234)),(new my_class("Saad", 564)),(new my_class("Nehal", 722))};
+
+		for(my_class x: my_classObj1) {
+			 
+			x.name += " Excpelled";
+
+			System.out.printf("\nStudent: %s \nEnrollment Number: %d\n\n", x.name, x.rollNum);
+		}
+
+		System.out.printf("Number of Obj Instences created are: %d", my_class.numOfInstences);
+    }
+
 }
+
+// =========================         Method overloading 
+// =========================         Methods signature  (method name and parameters{order, number, sequence })
+
+//static void fun1(int num, int sun){
+//     System.out.printf("This can be called in a static method %d ", num);
+
+// }
+
+// // Ststic is a keyword utility (useful) method and shared resources(var for all obj; same)
+
+// static void fun1(int num, int sun, int c){
+//     System.out.printf("This can be called a static method %d", c);
+		
+// }
+
+//====================================  Obj Class
 
 class my_class {
 	static int numOfInstences; //for the class; only one var created in java. 
-	int pnum;
+	int rollNum;
 	String name;
 
-	void myFunc(int pnum, String name) {
-		this.pnum = pnum;
-		this.name = name;
-		System.out.printf("My name is: %s and my num is: %d", pnum, name);
-		numOfInstences++ ;	
+	my_class(String stuName, int num) {
+		this.rollNum = num;
+		this.name = stuName;
+		
+		// System.out.printf("My name is: %s and my num is: %d", stuName, num);
+		numOfInstences++ ; // post Increment inc after the line.
+
 	}
+
 }

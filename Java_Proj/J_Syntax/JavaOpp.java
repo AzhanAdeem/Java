@@ -6,8 +6,8 @@ public class JavaOpp{
     int numOfProducts = 0;
     String color = null;
 
-    Shop shopObj1 = new Shop("One", 7, 3, numOfProducts, color); 
-    Shop shopObj2 = new Shop("Safari", 45, 23, numOfProducts, color);
+    clothShop shopObj1 = new clothShop("One", 7, 3, numOfProducts, color); 
+    clothShop shopObj2 = new clothShop("Safari", 45, 23, numOfProducts, color);
     
     // Constructor does not exist. Still works. 
     // Only one class can be public, and it can't be abstract.
@@ -32,16 +32,21 @@ public class JavaOpp{
     System.out.println(shopObj2.color);
     System.out.println(shopObj2.brand = "Addidas"+ "\n");
 
-    
+   // ===============================   Method Overloading (method signature)
+
    int a, b , c; 
     a =  b = c = 23;
     fun1(a,b);
     fun1(a, b , c);
 
+    // ==========================    Printing Objects toString Method;
+
+    System.out.printf("");
+
   }
 
-  // ============================       Method overloading 
-  // =========================      Methos signature  (method name and parameters{order, number, sequence })
+  // =========================         Method overloading 
+  // =========================         Methods signature  (method name and parameters{order, number, sequence })
   
   static void fun1(int num, int sun){
     System.out.printf("This can be called in a static method %d ", num);
