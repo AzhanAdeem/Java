@@ -1,7 +1,8 @@
 package Conversions;
 
 public class Conver {
-    public static int main(){  
+    public static int main() {  
+
     // Pad with leading zeros to make length a multiple of 4
        int[] binary = new int[6];
        binary = String.format("%" + (4 - binary.length() % 4) + "s", binary).replace(' ', '0');
