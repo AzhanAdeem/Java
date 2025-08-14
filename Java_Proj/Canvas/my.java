@@ -1,13 +1,13 @@
 
-package Canvas;
+//package Canvas;
 
 import javax.swing.*;
 
 public class my {
     public static void main(String[] args){
 
-        int wid = 300;
-        int hei = 300;
+        int wid = 500;
+        int hei = 500;
         JFrame frame = new JFrame();
 
         frame.setSize(wid,hei);
