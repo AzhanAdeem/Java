@@ -4,9 +4,9 @@ public class clothShop {
   String brand = "Brand name", color = "red";
   int price = 23, size = 45, numOfProducts = 0;
   static int numOfInstences; 
- // Ststic is a keyword utility (useful) method and shared resources(var for all obj; same)
+  // ====== Static is a keyword utility (useful) method and shared resources(var for all obj; same)
 
-  // if the constructor is not present all objects are same;
+  // ======== if the constructor is not present all objects are same;
   clothShop(String a, int b, int c) {
     
     this.brand = a;
@@ -17,7 +17,7 @@ public class clothShop {
     System.out.printf("\nThe brand is: %s \nThe price is: %d \nThe size is: %d", a,b,c);
   }
 
-  // ==========================            Constructor overloading
+  // ==========================       Constructor overloading
 
   clothShop(String a, int b, int c, int numOfProducts, String color) {
 
