@@ -1,8 +1,9 @@
+package OOP;
 
 public class clothShop {
 
-  String brand = "Brand name", color = "red";
-  int price = 23, size = 45, numOfProducts = 0;
+  String brand = "Brand name",   color = "red";
+  int    price =  23,            size  =  45  ,     numOfProducts = 0;
   static int numOfInstences; 
   // ====== Static is a keyword utility (useful) method and shared resources(var for all obj; same)
 
@@ -14,7 +15,7 @@ public class clothShop {
     this.size = c;
     numOfInstences++;
 
-    System.out.printf("\nThe brand is: %s \nThe price is: %d \nThe size is: %d", a,b,c);
+    System.out.printf("\nThe brand is: %s \tThe price is: %d \tThe size is: %d", a,b,c);
   }
 
   // ==========================       Constructor overloading
@@ -35,7 +36,7 @@ public class clothShop {
   void printRecipt( ) {
 
     System.out.printf("The number of products bought: %d. \nThe color is :%d\n", this.numOfProducts, this.color);
-    System.out.printf("\tThank You for shopping here.");
+    System.out.printf("\tThank You for shopping at our store.");
 
   }
 

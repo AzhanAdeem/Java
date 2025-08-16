@@ -1,3 +1,4 @@
+package OOP;
 
 //import java.util.Scanner;
 
@@ -48,19 +49,22 @@ public class JavaOpp {
     // ============ usefull to do a single operation on object of the same class;
 
     clothShop[] cloths = {
-        new clothShop("Addida", 25000, 34),
+
+        new clothShop("Adida", 25000, 34),
         new clothShop("Zara", 25000, 34),
-        new clothShop("Saya", 25000, 34) };
+        new clothShop("Saya", 25000, 34) 
+      };
 
     for (clothShop cloth : cloths) {
 
       System.out.printf("\nBrand: %s \t Price:%d \t Size: %d\n", cloth.brand, cloth.price, cloth.size);
 
     }
-
+ 
+  // ============================= End Of Main
+  
   }
   
-  // ============================= End Of Main
 
   // ========================= Method overloading
   // ========================= Methods signature (method name and
