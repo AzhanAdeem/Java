@@ -1,13 +1,24 @@
 package OOP.Inheritance;
 
 import java.util.Scanner;
-import java.util.*;
+import java.io.*;
 
 public class Main {
-    
-    //library myLib = new library( 300, 23, "Crime");
-    shelf self1 = new shelf();
+    public static void main ( ) {  
 
-    System.out.printf("This %d", self1.queNum);
-    
+        //Scanner scanObj = new Scanner();
+
+
+        library myLib = new library( 300, 23);
+        Shelf shelf1 = new Shelf(34500, 2344 ,45);
+
+        shelf1.setGenre("Comic");
+        shelf1.getgenre();
+    }
+
+    String numOfBooksPrint(Shelf shelf) {
+        System.out.printf("This total numof Books :%d", shelf.totalBooks);
+        return " " + shelf.totalBooks;
+    }
+
 }

@@ -2,16 +2,21 @@ package OOP.Inheritance;
 
 public class library {
 
-    int totalBooks, totalShelf , queNum;
-    String genre;
+    int totalBooks, totalShelfs;
+    String[] genre;
     
 
-    public library (int tB, int slf, String gun) {
-    
+    public library (int tB, int slf) {
+        
         this.totalBooks = tB;
-        this.genre = gun;
-        this.totalShelf = slf;
+        this.totalShelfs = slf;
 
+    }
+
+    @Override
+    public String toString( ){
+
+        return this.totalBooks +"\t"+ this.totalShelfs;
     }
     
 }
