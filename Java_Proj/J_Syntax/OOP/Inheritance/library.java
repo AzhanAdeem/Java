@@ -3,13 +3,13 @@ package OOP.Inheritance;
 public class library {
 
     int totalBooks, totalShelfs;
-    String[] genre;
+    String[] genre = {"Crime", "Comedy", "Drama", "Fiance", "History"};
     
 
-    public library (int tB, int slf) {
-        
-        this.totalBooks = tB;
-        this.totalShelfs = slf;
+    public library (int totalBooks, int totalShelfs) {
+
+        this.totalBooks = totalBooks;
+        this.totalShelfs = totalShelfs;
 
     }
 
