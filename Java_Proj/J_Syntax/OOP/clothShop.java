@@ -8,6 +8,7 @@ public class clothShop {
   // ====== Static is a keyword utility (useful) method and shared resources(var for all obj; same)
 
   // ======== if the constructor is not present all objects are same;
+
   clothShop(String a, int b, int c) {
     
     this.brand = a;
@@ -46,7 +47,7 @@ public class clothShop {
 
     return g;
   }
-    // ============================= Printing objects
+  // // ============================= Printing objects
 
   @Override  //immitate
   public String toString() {
@@ -54,12 +55,12 @@ public class clothShop {
     return this.brand+"\t"+this.color+"\t"+this.price ;
   }
   
+  // //==================   (  What originally gets printed?  )
+
   // @Override
   // public String toString(){
   
   //   return getClass().getName() +"@"+ Integer.toHexString(hashCode()); 
   // }
-
-  
 
 }

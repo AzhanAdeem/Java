@@ -45,11 +45,10 @@ public class JavaOpp {
 
     System.out.println(shopObj1);
 
-    // =============== Array of Obj ==========
-    // ============ usefull to do a single operation on object of the same class;
+    // ========================== Array of Obj 
+    // ================     usefull to do a single operation on object of the same class;
 
     clothShop[] cloths = {
-
         new clothShop("Adida", 25000, 34),
         new clothShop("Zara", 25000, 34),
         new clothShop("Saya", 25000, 34) 
@@ -64,17 +63,16 @@ public class JavaOpp {
   // ============================= End Of Main
   
   }
-  
 
-  // ========================= Method overloading
-  // ========================= Methods signature (method name and
-  // parameters{order, number, sequence})
+  // =========================    Method overloading
+  // ================  Methods signature (method name and parameters{order, number, sequence})
+  // ================  Static methods are reserved for a class and loaded before the main method;
 
   static void fun1(int num, int sun) {
     System.out.printf("This can be called in a static method %d ", num);
   }
 
-  static void fun1(int num, int sun, int c) {
+  static void fun1(int num, int sun, int c) { 
     System.out.printf("This can be called in a static method %d", c);
   }
 

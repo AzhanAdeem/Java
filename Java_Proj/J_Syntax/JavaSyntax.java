@@ -7,7 +7,6 @@ public class JavaSyntax {
 	public static void main(String[] args) {
 
 		// //=========================================== Comment
-		// ==================================
 
 		/*
 		 * Multi Line Comment
@@ -24,11 +23,32 @@ public class JavaSyntax {
 		// System.out.printf("%d %c %10s %b %d %.2f", zeroOrone, forChar, name, bool,
 		// forInt, forFloat);
 
-		// // for strings : %-9s [9 spaces, left align keep the org case as { s }
-		// small];
+		// // for strings : %-9s [ 9 spaces, left align keep the org case as { s }  small ];
+		// // %4.5d { 4 spaces 5 deci point };
+
+		// // ===============================================  Type Casting
+
+        int x = 23 ;
+		double u = 23.89000;
+		float f = 23.78f;
+		String tr = "this is my line";
+		String numStr = "3456";
+
+		String newInt = String.valueOf(x);
+		System.out.println(x);
+
+		float newFloat = (float) x/f;
+
+		// // ===========================================  AutoBoxing ?????
+
+		Integer num34 = 23;
+		
+		System.out.println(num34.getClass.getName());
+
+		String newDou = Double.toString(u);
 
 		// // ============================================== String methods
-		// =================================================
+
 		// String nameAndSirName;
 
 		// Scanner scannerObj = new Scanner(System.in);
@@ -45,14 +65,12 @@ public class JavaSyntax {
 		// ascii code value
 
 		// //===================================== Muiliple varable Declaration
-		// ==========================
 
 		// int sam, ban, han;
 		// sam = ban = han = 23;
 		// final int num2 = 23; // constant immutable
 
 		// ======================================== Math expressions in Java
-		// ==================
 
 		// System.out.println( 2*7/3); // 4 ( / 1st then * ); B O D M A S,
 		// System.out.println( 2 - 3 + 5); // 4
@@ -66,7 +84,6 @@ public class JavaSyntax {
 		// 0 | comparison Again to deci
 
 		// // ====================================== Arrays 1D 2D
-		// =============================================
 
 		// //int[] array = new int[5];
 		// int[][] array2D = new int[3][4];
@@ -117,7 +134,6 @@ public class JavaSyntax {
 		// System.out.printf("%6d %3d", forFloat,num2);
 
 		// // ==================================== Taking user input
-		// ==========================
 
 		// //The scanner obj is to be created once, for all user inputs;
 		// Scanner scanObj = new Scanner(System.in);
@@ -227,7 +243,8 @@ public class JavaSyntax {
 		// System.out.println("Index of 1st \"up the\" is:"+ str2.indexOf("up the"));
 		// //lastIndexOf();
 
-		// // ============ Concatination =======
+		// // =========================   Concatination 
+
 		// System.out.println(str1+" "+str2);
 		// System.out.println(str1.concat(str2));
 

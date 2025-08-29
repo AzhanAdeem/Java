@@ -17,7 +17,7 @@ public class Point {
 
     }
 
-    public int getXY () {
-        return x + y;
+    public String getXY () {
+        return this.x+" "+ this.y;
     }
 }

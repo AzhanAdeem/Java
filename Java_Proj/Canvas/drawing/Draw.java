@@ -8,7 +8,7 @@ import javax.swing.*;
 // an api for java GUI; Part of java package;
 
 
-public class Draw extends JComponent {
+public class Draw extends JComponent {  //Inheritance
 
     private int height = 300;
     private int width = 500;
