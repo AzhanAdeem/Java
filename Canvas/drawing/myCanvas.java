@@ -1,5 +1,5 @@
 
-package Canvas;
+//package Canvas;
 
 import java.util.*;
 import java.util.Vector;
@@ -32,11 +32,16 @@ public class myCanvas {
         // frame.setIconImage.(logo.get());
         
         // =============================   Cjecking vector Implementation 
+        // If I am using the java predefined vector class.
+        // Vector<Double> vector1 = new Vector<>();
+        // vector1.add(0, 45.0097);
+        // (  .add ) for adding a new entry ( .set ) for replacing an existing entry;
 
-        Vector vector1 = new Vector();
-        vector1.setVector(0, 45.0097);
+        // If I am using my own vector class.
+        MyVector vector2 = new MyVector();
+        vector2.setVector(0, 45.0097);
 
-        System.out.println(vector1);
+        System.out.println(vector2);
     }
 
 }
