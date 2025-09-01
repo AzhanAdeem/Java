@@ -8,11 +8,8 @@ public class MyVector {
     private double x;
     private double y;
 
-    //int i; 
-    //index of where the value is suppose to be stored on the arraylist;
-
-    //=====================================  An array list for soring the vectors.
-    private ArrayList<Double> listOfVec = new ArrayList<>();
+    //=====================================  An array list for storing the vectors.
+    private ArrayList<Double[]> listOfVec = new ArrayList<Double[]>();
 
     // ==================================== Constructors
     // ===================  Null Constructor 
@@ -34,12 +31,10 @@ public class MyVector {
     /* 
         usig double wrapper class as I have to store an array into the ArrayList. 
         As ArrayList only stores objs.
-        Wrapper class will convert double to Double obj.
+        Wrapper class will convert double primitive to Double obj. Through AutoBoxing;
     */
 
-        Double[] subArr = new Double[2];
-        subArr[index] = x;
-        listOfVec.add( subArr[index]);
+        listOfVec.add(index, x);
     }
     
     public double getVector (int x) {
@@ -68,6 +63,12 @@ public class MyVector {
 
         return "Dimention = %d"+subInd.length + 1;
     }
+
+    // =========================  For cloning vector
+    //void clone(){};
+
+    // ========================= For checking equality
+    //void equals(){};
 
     // ========================================  Vector testing main method
     public static void main (String[] args) {
