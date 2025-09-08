@@ -72,38 +72,37 @@ public class JavaOpp {
 
     // ================================  Array Of obj
     
-    Shop[] shopArray1 = new Shop[5];
-    shopArray1[0] = new Shop("Nike", 2300, 45);
-    shopArray1[1] = new Shop("Eminent", 1500, 45);
-    shopArray1[2] = new Shop("J.", 2000, 45);
-    shopArray1[3] = new Shop("Outfitters", 3000, 45);
-    shopArray1[4] = new Shop("One", 2000, 45);
+    // Shop[] shopArray1 = new Shop[5];
+    // shopArray1[0] = new Shop("Nike", 2300, 45);
+    // shopArray1[1] = new Shop("Eminent", 1500, 45);
+    // shopArray1[2] = new Shop("J.", 2000, 45);
+    // shopArray1[3] = new Shop("Outfitters", 3000, 45);
+    // shopArray1[4] = new Shop("One", 2000, 45);
 
     //Use for or while loop to print all the Obj using toString();
     // ====================== OR
-    ArrayList<Shop> shopArray = new ArrayList<Shop>();
+    // =============== Using Array List appending objs
 
-    shopArray.add(new Shop("Nike", 1900, 45));
-    shopArray.add(new Shop("Eminent", 2000, 45));
-    shopArray.add(new Shop("Outfitters", 1099, 45));
-    shopArray.add(new Shop("J.", 2000, 45));
+    // ArrayList<Shop> shopArray = new ArrayList<Shop>();
 
-    // ================================ End Of Main
+    // shopArray.add(new Shop("Nike", 1900, 45));
+    // shopArray.add(new Shop("Eminent", 2000, 45));
+    // shopArray.add(new Shop("Outfitters", 1099, 45));
+    // shopArray.add(new Shop("J.", 2000, 45));
+
+    // ================================ ::: End Of Main :::
   }
 
-  // ================================ Method overloading
-  // ========================= Methos signature (method name and parameters{order,
-  // number, sequence })
+  // ================================ : Method overloading :
+  // ========================= Methos signature (method name and parameters{order, number, sequence })
   // ================  Static methods are reserved for a class and loaded before the main method;
 
-
+  //=================  Func over-loading
   static void fun1(int num, int sun) {
-
     System.out.printf("This can be called in a static method. %a %d %c");
   }
 
   static void fun1(int num, int sun, int c) {
-
     System.out.printf("This can be called in a static method. %a %b %c");
   }
 }

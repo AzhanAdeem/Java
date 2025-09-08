@@ -1,7 +1,7 @@
 
-import java.lang.*;
-import java.util.*;
-import java.io.*;
+// import java.lang.*;
+// import java.util.*;
+// import java.io.*;
 
 class myClone implements Cloneable {
 
@@ -12,14 +12,15 @@ class myClone implements Cloneable {
     // ==================== Constructor and copy constructor;
 
     myClone() {
+
+        super(); // for Object class;
         this.name = name;
         this.age = age;
         this.height = height;
-
     }
 
     void myClone(myClone other) {
-
+    
         this.name = other.name;
         this.age = other.age;
         this.height = other.height;
@@ -29,7 +30,8 @@ class myClone implements Cloneable {
 
     @Override
     public Object clone() throws CloneNotSupportedException {
-        return super.clone(); // Call the cons of the class obj and instantiates the value.
+        //return super.clone(); // Call the cons of the class Object and instantiates the value.
+        return this.clone(); // Stack overflow error;
     }
 
     @Override

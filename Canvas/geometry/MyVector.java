@@ -4,7 +4,7 @@ import java.util.*; //  Collection
 import java.lang.*;
 
 // Prob vector is pre defined in java.util;   package.
-public class MyVector {
+public class MyVector implements Cloneable {
 
     private double x;
     private double y;
@@ -25,8 +25,8 @@ public class MyVector {
 
         // while (Double[] x : other.getVector(0)){
         // }
-         this.x = other.getVector(0);
-         this.y = other.getVector(0);
+        this.x = other.getVector(0);
+        this.y = other.getVector(0);
     }
 
     // =================================== Getter and setters
@@ -36,7 +36,7 @@ public class MyVector {
         /*
          * used double wrapper class as I have to store an array into the ArrayList.
          * As ArrayList only stores objs.
-         * Wrapper class will convert double primitive to Double obj. 
+         * Wrapper class will convert double primitive to Double obj.
          * Through AutoBoxing;
          */
 
@@ -45,7 +45,7 @@ public class MyVector {
 
         // ===== Instantiation (creating an obj in memory);
         arrForSet = Double.valueOf(x);
- 
+
         // ===== Initialization (1st value assigned)
         arrForSet = x;
 
@@ -65,19 +65,20 @@ public class MyVector {
     }
 
     // ============ Tell the number of dimentions;
-    
-    void lengthTell() {  
-    
-    // ===== Declaration  (Ref Var)            ========= Instantiation ( Created Obj on Heap)
-     ArrayList<ArrayList<Double>> multiArray = new ArrayList<ArrayList<Double>>();
-    // ======== This only created a multiArray ArrayList, it did not create sub arrays;
+
+    void lengthTell() {
+
+        // ===== Declaration (Ref Var) ========= Instantiation ( Created Obj on Heap)
+        ArrayList<ArrayList<Double>> multiArray = new ArrayList<ArrayList<Double>>();
+        // ======== This only created a multiArray ArrayList, it did not create sub
+        // arrays;
 
         Double[] D2 = { 23.96, 34.99 };
         int[] list = { 0, 1, 2, 3, 4 };
 
         // ============== Creating Instances/Obj inside the (multiArray) sub arrays;
         multiArray.add(new ArrayList<Double>()); // R1 row1
-        multiArray.add(new ArrayList<Double>()); // R2 
+        multiArray.add(new ArrayList<Double>()); // R2
         multiArray.add(new ArrayList<Double>()); // R3
         multiArray.add(new ArrayList<Double>()); // R4
         multiArray.add(new ArrayList<Double>()); // R5
@@ -87,42 +88,18 @@ public class MyVector {
             // Calling the subArray and appending the values;
         }
 
-        // double[][] subInd = new double[10][2];
-
-        // try {
-
-        //     subInd[i][i] = this.getVector(i); // This will give you an array [];
-        //     System.out.printf("Dimention = %d", subInd.length + 1);
-
-        //     if (subInd.length == 1) {
-        //         System.out.print("2 Dimaentional");
-        //     } else if (subInd.length == 2) {
-        //         System.out.print("3 Dimaentional");
-        //     } else {
-        //         System.out.println("Index out of bound error.");
-        //     }
-
-        //     return "Dimention = %d" + subInd.length + 1;
-
-        // } catch (Exception e) {
-
-        //     throw new IndexOutOfBoundsException();
-        //     // System.out.println("Re-run the code and use a smaller index.");
-
-        // }
-
-        }
+    }
 
     // ========================= For cloning vector
     @Override
-    public object clone() throws CloneNotSupportedExceptionError{
-        return ;
+    public Object clone() throws CloneNotSupportedException {
+        return super.clone();
     }
 
     // ========================= For checking equality
-     void equals(MyVector other){
+    void equals(MyVector other) {
         if (other.x == this.x) {
-            System.out.printf("They %f %f are equal: \n", this.x, other.y );
+            System.out.printf("They %f %f are equal: \n", this.x, other.y);
         } else {
             System.out.println("They are not equal.");
         }
@@ -137,6 +114,7 @@ public class MyVector {
         }
         return ans;
     }
+
     public static void main(String[] args) {
 
         MyVector vector1 = new MyVector();
