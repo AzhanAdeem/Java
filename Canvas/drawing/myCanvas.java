@@ -1,4 +1,5 @@
 
+// =========== ================ =========== The driver class of the app;
 //package Canvas;
 
 import java.util.*;
@@ -42,6 +43,9 @@ public class myCanvas {
         vector2.setVector(0, 45.0097);
 
         System.out.println(vector2);
+
+        System.out.println(vector2.hashCode());
+
     }
 
 }

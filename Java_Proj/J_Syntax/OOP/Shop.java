@@ -48,14 +48,14 @@ public class Shop {
 
   public void copy(Shop other) {
 
-    // ====================== If values are not private 
+    // ======== If values are not private 
 
     //   this.brand = other.brand;
     //   this.color = other.color;
     //   this.price = other.price;
     //   this.size = other.size;
   
-    // ======================== If attributes are private
+    // ======== If attributes are private
 
     this.setBrand(other.brand);
     this.setColor(other.color);
@@ -68,15 +68,19 @@ public class Shop {
   //============================= Printing objects through
   //=============================  Method Overriding;
 
-  @Override
+  @Override  //@ annotation; Provide meta data to a compiler to alter how it is treated?
   public String toString() {
     return "\t" + this.color + "\t" + this.size + "\t" + this.price + "\t" + this.brand;
   }
 
-  @Override
-  public String toString(){
-    return getClass().getName() +"@"+ Integer.toHexString(hashCode()); 
-  }
+  // Provides a sys to checkes and balace. What if you miss-spell it.
+
+
+  //// ============================= What originally gets printed.
+  // @Override
+  // public String toString(){
+  //   return getClass().getName() +"@"+ Integer.toHexString(hashCode());  // java.lang.Shop@123xyZ;
+  // }
 
   // ============================ Setters
 
@@ -131,6 +135,5 @@ public class Shop {
     System.out.println(g);
     return g;
   }
-
 
 }

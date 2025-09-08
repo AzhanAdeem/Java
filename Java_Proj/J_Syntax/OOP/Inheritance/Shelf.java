@@ -1,6 +1,6 @@
-package OOP.Inheritance;
+//package OOP.Inheritance;
 
-public class Shelf extends library {
+public class Shelf extends Library {
 
     static  int    shelfNumber = 0;
     private int    genreIndex  = 0;

@@ -28,24 +28,36 @@ public class JavaSyntax {
 
 		// // ===============================================  Type Casting
 
-        int x = 23 ;
-		double u = 23.89000;
-		float f = 23.78f;
-		String tr = "this is my line";
-		String numStr = "3456";
+        // int x = 23 ;
+		// double deciNum = 23.89000;
+		// float f = 23.78f;
+		// String tr = "this is my line";
+		// String numStr = "3456";
 
-		String newInt = String.valueOf(x);
-		System.out.println(x);
+		// String newInt = String.valueOf(x);
+		// System.out.println(x);
 
-		float newFloat = (float) x/f;
+		// float newFloat = (float) x/f;
+		// int num4 = (int) newFloat;
+		// double deciNum2 = (double) newFloat;
 
 		// // ===========================================  AutoBoxing ?????
 
-		Integer num34 = 23;
+		// Integer num34 = 23;
 		
-		System.out.println(num34.getClass.getName());
+		// System.out.println(num34.getClass().getName());
 
-		String newDou = Double.toString(u);
+		// String newDou = Double.toString(deciNum);
+		// System.out.println(newDou);
+
+		//  //============================ unBoxing 
+
+		// int num35 = num34;
+		// System.out.println(num35);
+
+		// int num36 = Integer.valueOf(num34);
+		// System.out.println(num36);
+		
 
 		// // ============================================== String methods
 
@@ -335,4 +347,4 @@ public class JavaSyntax {
 
 // 	}
 
- }
+}

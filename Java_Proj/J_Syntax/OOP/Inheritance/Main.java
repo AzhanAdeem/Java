@@ -1,4 +1,4 @@
-package OOP.Inheritance;
+//package OOP.Inheritance;
 
 import java.util.Scanner;
 import java.io.*;
@@ -16,6 +16,8 @@ public class Main {
         shelf1.setGenre("Comic");
         shelf1.getGenre();
         System.out.printf("The total num of books are: %d",shelf1.getTotalBooks());
+
+        //scanObj.close;
     }
 
 }

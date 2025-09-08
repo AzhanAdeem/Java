@@ -1,6 +1,6 @@
-package OOP.Inheritance;
+//package OOP.Inheritance;
 
-public class Member {
+public class Member extends Library{
 
     String type, name;
 

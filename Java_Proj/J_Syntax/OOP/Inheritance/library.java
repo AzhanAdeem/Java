@@ -1,6 +1,6 @@
-package OOP.Inheritance;
+//package OOP.Inheritance;
 
-public class library {
+public class Library {
 
     int totalBooks, totalShelfs;
     String[] genre = {"Crime", "Comedy", "Drama", "Fiance", "History"};
