@@ -26,7 +26,7 @@ public class Shop {
 
 // ==========================    Constructor overloading
 
-  clothShop(String a, int b, int c, int numOfProducts, String color) {
+  Shop(String a, int b, int c, int numOfProducts, String color) {
 
     this.brand = a;
     this.price = b;

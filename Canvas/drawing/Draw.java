@@ -11,7 +11,7 @@ import javax.swing.*;
 public class Draw extends JComponent {  //Inheritance
 
     private int height = 300;
-    private int width = 500;
+    private int width = 500;w
 
     
 }
