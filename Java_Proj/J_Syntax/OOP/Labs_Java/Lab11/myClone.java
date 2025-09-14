@@ -34,8 +34,8 @@ class myClone implements Cloneable {
 
     @Override
     public Object clone() throws CloneNotSupportedException {
-        //return super.clone(); // Call the cons of the class Object and instantiates the value.
-        return this.clone(); // Stack overflow error;
+        return super.clone(); // Call the cons of the class Object and instantiates the value.
+        //return this.clone(); // Stack overflow error;
     }
 
     @Override

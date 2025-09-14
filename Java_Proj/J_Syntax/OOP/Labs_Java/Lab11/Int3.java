@@ -1,6 +1,6 @@
 import java.lang.Cloneable;
 
-public class Int3 {
+public class Int3 implements Cloneable {
 
     // Attributes
     int j;
@@ -33,9 +33,18 @@ public class Int3 {
     }
  
     // ========== Clone method ( Shallow )
-    @Override
-    public Object clone () throws CloneNotSupportedException{
-        return super.clone();
 
+    // @Override
+    // public Object clone() throws CloneNotSupportedException{
+    //     return super.clone();
+    // }
+    
+    @Override 
+    protected Object clone() throws CloneNotSupportedException {
+        Int3 intClone = (Int3) super.clone();
+        intClone.j = this.j;
+        return intClone;
     }
+
+
 }
