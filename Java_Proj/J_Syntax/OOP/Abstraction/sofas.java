@@ -1,5 +1,12 @@
+import java.util.*;
 
+public class sofas extends Ikia {
 
-public class sofas extends Ikia implements price{
+    float price = 23.57f;
+
+    sofas (float price) {
+        this.price = price;
+    }
+
     
 }
