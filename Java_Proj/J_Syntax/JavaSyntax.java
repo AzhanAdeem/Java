@@ -92,8 +92,7 @@ public class JavaSyntax {
 		// System.out.println(Math.pow(3,2)); // 18.0 ans float
 		// System.out.println(2-3*4/6 + Math.pow(5,2)*10); // 120.o
 		// System.out.println(9*2/2); // 9 }=> Div 1st
-		// System.out.println(6^3); // Binary XOR convert num to binary then | 1 | 1 | =
-		// 0 | comparison Again to deci
+		// System.out.println(6^3); // Binary XOR convert num to binary then | 1 | 1 | = 0 | comparison Again to deci
 
 		// // ====================================== Arrays 1D 2D
 
