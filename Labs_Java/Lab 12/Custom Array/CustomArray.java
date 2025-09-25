@@ -1,7 +1,6 @@
 import java.util.ArrayList;
 
-public class Driver {
-
+public class CustomArray{  
     // To make the var global we made it static.
     static intList intListRefVarFrObj;
 
@@ -17,6 +16,7 @@ public class Driver {
             intListRefVarFrObj = new intList(23);
 
         } catch ( ArrayIndexOutOfBoundsException e) {
+            
             e.printStackTrace();
             error = true;
             intListRefVarFrObj.autoSize();
