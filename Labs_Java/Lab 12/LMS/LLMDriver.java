@@ -1,12 +1,13 @@
-import java.util.ArrayList;
+//import java.util.ArrayList;
 
 public class LLMDriver {
 
      public static void main(String[] args) {
 
-        CourseList courseList = new CourseList("Math", "CS234");
+        CourseList courseList = new CourseList();
+        courseList.add(0, "Math", "CS123");
 
-        
+        //courseList.toString();
         System.out.println();
         System.out.println(courseList);
     }
