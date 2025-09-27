@@ -1,14 +1,17 @@
 
 // ====================================    Dynamic Array  ==========================================
+
 // This is the code of self made dynamic array;
 //Can't let user set the name of the var ha will aet the name of the obj;
 
+// To make it dynamic put a if else condition in the add method;
+//if the limit has been reached we call the increase length method;
 
 public class intArray {
     
     private int length;
     int[] array;
-    int eleSetVar = 0;
+    int eleSetInd = 0;
 
     intArray(){}
 
@@ -27,15 +30,15 @@ public class intArray {
         // while loop as while does not need the int to be initializedin it.
         // length starts from 1; index from = 0;
         
-        while ( eleSetVar <= (array.length-1)) { 
+        while ( eleSetInd <= (array.length-1)) { 
 
-            array[eleSetVar] = x;
+            array[eleSetInd] = x;
 
             if (array.length == 1) {                                  
                 array[(array.length - 1)] = x;
             }
 
-            eleSetVar++;
+            eleSetInd++;
         }
     }
 }
