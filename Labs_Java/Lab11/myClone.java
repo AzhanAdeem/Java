@@ -41,13 +41,17 @@ class myClone extends Object implements Cloneable {
     // }
 
     // ===== Deep Cloning; no still shallow because of String immutable
+
     @Override 
     public Object clone() throws CloneNotSupportedException {
-        //super.clone();
-        myClone cloned = (myClone) super.clone();
-        cloned.name = this.name;
 
+        //super.clone(); //Shallow
+
+        myClone cloned = (myClone) super.clone(); //Deep
+        
+        cloned.name = this.name;
         //cloned.name = (String) this.name.clone();
+
         //The String doesn't have a clone() method (and does not implement Cloneable). 
         //Strings are immutable, so you can just assign the reference:
 
@@ -56,7 +60,9 @@ class myClone extends Object implements Cloneable {
 
     @Override
     public String toString() {
+
         return "\tName:" + this.name + "\tAge:" + this.age + "\tHeight:" + this.height;
+        //return this.getClass().getSimleName+""+Integer.toHexString(hashCode());
     }
 
 }

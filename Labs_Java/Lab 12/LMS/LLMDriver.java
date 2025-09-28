@@ -29,6 +29,10 @@ public class LLMDriver {
 
         System.out.println(stu1);
 
+        // ==== ==== Testing ClassList Class
+
+        ClassList class1 = new ClassList(stu1);
+
     }
 
     // // ================== Old code for custom Array list Dynamic;

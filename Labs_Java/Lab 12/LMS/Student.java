@@ -4,13 +4,19 @@
 
 // Each student will create it's own object and have their separate courses.
 
-public class Student {
+import java.lang.Cloneable;
+import java.lang.CloneNotSupportedException;
+
+public class Student implements Cloneable{
 
     // ====  ====  Attributes
 
     private String stuName;
     private String seatNum;
+    
     CourseList stuCourseList = new CourseList();
+
+    static int numOfStu = 0;
 
     // When the constructor runs add a func that takes all the course values and adds it in the list;
     public Student(String name, String snum) {
@@ -18,9 +24,9 @@ public class Student {
         this.setName(name);
         this.setSeatNum(snum);
         //this.stuCourseList.add();
+        numOfStu++;
 
     }
-
 
     // ====  ==== Setters and Getters
 
@@ -41,24 +47,30 @@ public class Student {
     }
 
     // ==== ===== Utility method 
+
     void add(String courseName, String courseCode){
         this.stuCourseList.add(courseName, courseCode);
     }
 
-
-    //@Overriding interprise methods;
+    // ==== ==== @Overriding interprise methods;
 
     @Override
-    public String toString(){
+    public String toString() {
 
         System.out.printf("Student Name: %s, Student SeatNum: %s\n", this.getName(), this.getSeatNum());
         System.out.println("Courses Enrolled:");
         for (String i : this.stuCourseList.courselist) {
             System.out.printf("%s\t",i);
         }
-        return "//====== End +=====\\\\";
+        return "//====== End =====\\\\";
     }
 
+    @Override 
+    protected Object clone() throws CloneNotSupportedException{
+
+        Student stuObjClone = (Student) super.clone();
+        return stuObjClone;
+    }
 
 
     
