@@ -6,12 +6,14 @@ public class JavaSyntax {
 
 	public static void main(String[] args) {
 
-		// //=========================================== Comment
+		// //==================================================    Comment    ================================================================
 
 		/*
 		 * Multi Line Comment
 		 */
 
+		// ================================================    Data types in Java    =======================================================
+		
 		// var num1 = 34; //short and long;
 		// byte zeroOrone = 0;
 		// int forInt = 3;
@@ -26,7 +28,7 @@ public class JavaSyntax {
 		// // for strings : %-9s [ 9 spaces, left align keep the org case as { s }  small ];
 		// // %4.5d { 4 spaces 5 deci point };
 
-		// // ===============================================  Type Casting
+		// // ===============================================  Type Casting   ======================================================================
 
         // int x = 23 ;
 		// double deciNum = 23.89000;
@@ -41,7 +43,7 @@ public class JavaSyntax {
 		// int num4 = (int) newFloat;
 		// double deciNum2 = (double) newFloat;
 
-		// // ===========================================  AutoBoxing ?????
+		// // ===========================================  AutoBoxing ????? ================================================================
 
 		// Integer num34 = 23;
 		
@@ -59,7 +61,7 @@ public class JavaSyntax {
 		// System.out.println(num36);
 		
 
-		// // ============================================== String methods
+		// // ============================================== String methods  ===============================================================
 
 		// String nameAndSirName;
 
@@ -76,13 +78,13 @@ public class JavaSyntax {
 		// System.out.println(name.contains("e")); // can also create a loop and check
 		// ascii code value
 
-		// //===================================== Muiliple varable Declaration
+		// //=====================================   Muiliple varable Declaration   ==========================================================
 
 		// int sam, ban, han;
 		// sam = ban = han = 23;
 		// final int num2 = 23; // constant immutable
 
-		// ======================================== Math expressions in Java
+		// ================================================   Math expressions in Java   ================================================
 
 		// System.out.println( 2*7/3); // 4 ( / 1st then * ); B O D M A S,
 		// System.out.println( 2 - 3 + 5); // 4
@@ -94,7 +96,7 @@ public class JavaSyntax {
 		// System.out.println(9*2/2); // 9 }=> Div 1st
 		// System.out.println(6^3); // Binary XOR convert num to binary then | 1 | 1 | = 0 | comparison Again to deci
 
-		// // ====================================== Arrays 1D 2D
+		// // ============================================    Arrays 1D 2D   ============================================================
 
 		// //int[] array = new int[5];
 		// int[][] array2D = new int[3][4];
@@ -137,14 +139,14 @@ public class JavaSyntax {
 		// }
 		// //}
 
-		// // =================================== Strings =========================
+		// // =============================================    Strings    ==================================================
 
 		// System.out.println("\nAs Salamu alaykum, Fam");
 		// System.out.println("App"+"le");
 		// System.out.println(num1 +" "+ num2);
 		// System.out.printf("%6d %3d", forFloat,num2);
 
-		// // ==================================== Taking user input
+		// // =========================================    Taking user input   ============================================
 
 		// //The scanner obj is to be created once, for all user inputs;
 		// Scanner scanObj = new Scanner(System.in);
@@ -155,8 +157,7 @@ public class JavaSyntax {
 		// int num3 = scanObj.nextInt();
 		// scanObj.close();
 
-		// // ===================================== Loops =========================
-
+		// // ===========================================    Loops    =========================================================
 		// int i2 = 1;
 		// while( i2 < 23){ // Runs on a condition no itterator needed.
 		// System.out.printf("The iterator i = %d \t", i2);
@@ -203,7 +204,7 @@ public class JavaSyntax {
 		// Date&time:%t %tH %tS;
 		// }
 
-		// ============== How Increment works
+		// ================================================    How Increment works   ==========================================================
 
 		// //Guess the output;
 		// int i = 1;
@@ -221,7 +222,7 @@ public class JavaSyntax {
 		// System.out.println(i);
 		// }
 
-		// //============================ How to take input in single line comments
+		// //=========================================   How to take input in single line comments    =========================================
 
 		// Scanner scanObj2 = new Scanner(System.in);
 
@@ -232,14 +233,14 @@ public class JavaSyntax {
 		// i++;
 		// }
 
-		// //============================ Area of a triangle in line calcu;
+		// //==========================================     Area of a triangle in line calcu    ===============================================
 
 		// int len = 23;
 		// int high = 78;
 		// int area;
 		// System.out.printf("The area is: %1$6d", area = len*high);
 
-		// //============================= String Formatting
+		// //=================================================    String Formatting   =========================================================
 
 		// System.out.println("Enter a string:");
 		// String str1 = scanObj.nextLine();
@@ -254,7 +255,7 @@ public class JavaSyntax {
 		// System.out.println("Index of 1st \"up the\" is:"+ str2.indexOf("up the"));
 		// //lastIndexOf();
 
-		// // =========================   Concatination 
+		// // =============================================   Concatination    =============================================================
 
 		// System.out.println(str1+" "+str2);
 		// System.out.println(str1.concat(str2));
@@ -284,19 +285,44 @@ public class JavaSyntax {
 		// System.out.println(x3);
 		// }
 
-		// // =============================== Method Overloading (method signature)
+		//  // =====================================    What is early return?    =============================================================
+
+        // int num =  23;
+        // Integer numconvert = num;
+
+        // if ( numconvert instanceof Integer ) {  
+        //     if ( num > 10) {
+        //         System.out.println("1st pri"); // useless to type any thing after return;
+                
+        //         if (num > 22) {
+        //             System.out.println("Nested if ");
+        //             return; // if true it will exit this mthod completely;
+        //         }
+        //     }
+        //     if (num > 20){
+        //         System.out.println("Sec pri");
+        //         return;
+        //     }
+        //     System.out.println(" 1st Ok| lts go.");
+        // }
+        // System.out.println("2nd Ok| lts go.");
+
+        // // Early return will exit the condition it is in and the method; no other return will work except in finally{};
+
+
+		// // =============================================    Method Overloading (method signature)    =======================================
 
 		// int a, b , c;
 		// a = b = c = 23;
 		// fun1(a,b);
 		// fun1(a, b , c);
 
-		// //============================= OOP
+		// //==========================================================    OOP    ==========================================================
 
 		// my_class classObj = new my_class();
 		// classObj.myFunc(7865, "Sami");
 
-		// // =================================== Array of Obj
+		// // ======================================================    Array of Obj    =====================================================
 
 	// 	my_class[] my_classObj1 = { (new my_class("Asad", 234)),
 	// 			(new my_class("Saad", 564)),
@@ -314,8 +340,8 @@ public class JavaSyntax {
 
 }
 
-// ========================= Method overloading
-// ========================= Methods signature (method name and parameters{order, number, sequence })
+// =================================================    Method overloading    =================================================================
+// ================================    Methods signature (method name and parameters{order, number, sequence })    ============================
 
 // static void fun1(int num, int sun){
 // System.out.printf("This can be called in a static method %d ", num);
@@ -330,7 +356,7 @@ public class JavaSyntax {
 
 // }
 
-// ==================================== Obj Class
+// =================================================    Obj Class    ======================================================================
 
 // class my_class {
 // 	static int numOfInstences; // for the class; only one var created in java.
