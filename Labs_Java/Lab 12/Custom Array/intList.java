@@ -1,11 +1,11 @@
 //==============  This is a list that works like an arrayList till the basic functionality 
 // =============  Like auto sizing
 
-// User can specify the length and the name 
-// no other data type as each data type requires a new class;
-// so does the dimention but we can do it like python code was becoming to long;  
-// the name will be the object name;
-// Increase the size by : (orgSize * orgSize/2) + 1
+// User can specify the length and the name is the object name;
+// No other data type as each data type requires a new class;
+// so does the dimention but we can do it like python code was becoming lenthy;  
+// The name will be the object name;
+// Increase the size by : (orgSize * orgSize/2) + 1;
 
 import java.util.Scanner;
 
@@ -22,7 +22,7 @@ public class intList {
 
     intList(int size) {
         super();
-        this.size = size;
+        this.setSize(size);
     }
 
     // ============== Setters
@@ -32,7 +32,7 @@ public class intList {
     }
 
     public void setName(String name) {
-    this.name = name;
+        this.name = name;
     }
 
     public void setDataType(String dataType) {
@@ -50,20 +50,20 @@ public class intList {
     }
 
     public String getName() {
-    return this.name;
+        return this.name;
     }
 
     public String getDataType() {
-    return this.dataType;
+        return this.dataType;
     }
 
     public int getDimention() {
-    return this.dimention;
+        return this.dimention;
     }
 
-    // =================================================
+    // ======   ======   End of setter and getters;
 
-    // A method for creating a custom array
+    // ==== ===== A method for creating a custom array
 
     void createArray(int size, int dimention, String dataType, String refName) {
 
@@ -80,11 +80,12 @@ public class intList {
                 System.out.println("Tell me the nested arrays length:");
                 int nestedArrDimention = scanrRefVar.nextInt();
 
-                String[] list = new String[] { this.name };
+                String[] list = new String[] { this.name }; // Dimention and elements initialised;
                 String[][] list2 = new String[][] { list };
                 list2 = new String[this.size][nestedArrDimention];
 
-                ans =  list2;
+                String[][] ans =  list2; // Shallow copy
+
             } else if (this.getDimention() == 3) {
 
                 System.out.printf("\nTell me the 1st nested arrays length:");
@@ -212,21 +213,23 @@ public class intList {
 
         if ( this.getDimention() == 1) { 
 
+            int[] list = new int[] {2,3,4};
+            
             int j = 0;
-
             for (int i : list) {
+
                 newArray[j] = i;
+
                 j++;
             }
         }
         return newArray;
-
-    }
+    } // auto size end;
 
     @Override
     public String toString() {
         // return this.getClass().getName() + "@" + Integer.toHexString(hashCode());
-        return this.getClass().getName() + "And The size is :" + this.size;
+        return this.getClass().getName() + "is the name, and the size is:" + this.size;
     }
 
 }

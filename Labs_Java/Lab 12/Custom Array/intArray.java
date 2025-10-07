@@ -2,10 +2,10 @@
 // ====================================    Dynamic Array  ==========================================
 
 // This is the code of self made dynamic array;
-//Can't let user set the name of the var ha will aet the name of the obj;
+// Can't let user set the name of the var he will set the name of the obj;
 
 // To make it dynamic put a if else condition in the add method;
-//if the limit has been reached we call the increase length method;
+// if the limit has been reached we call the increase length method;
 
 public class intArray {
     

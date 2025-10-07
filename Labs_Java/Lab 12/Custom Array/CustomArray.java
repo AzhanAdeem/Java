@@ -1,6 +1,9 @@
-import java.util.ArrayList;
+
+// ======   =======   Driver Class for custom array;
+// ===== ===== These code need review under creation;
 
 public class CustomArray{  
+
     // To make the var global we made it static.
     static intList intListRefVarFrObj;
 
